@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Operator Mono Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Operator Mono Light'), url('../fonts/OperatorMono/OperatorMono-Light.woff') format('woff'); }
+@font-face {
+  font-family: 'Ubuntu Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ubuntu Light'), url('../fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype'); }
+@font-face {
+  font-family: 'Average Sans';
+  src: url('../fonts/AverageSans/AverageSans-Regular.ttf') format('truetype'); }
