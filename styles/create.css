@@ -1,6 +1,6 @@
 /* Body Styles */
 .body-black { background-color: #000000; color: #ffffff }
-.body-light { background-color: #cccccc; color: #000000 }
+.body-light { background-color: #aaaaaa; color: #000000 }
 .body-gray  { background-color: #555555; color: #ffffff }
 .body-teal  { background-color: #06ccb4; color: #000000 }
 
@@ -108,13 +108,13 @@
 .f-teal   { color: teal;   }
 
 /* Font Sizes */
-h1 { font-size: 48px; margin: 0; }
-h2 { font-size: 40px; }
-h3 { font-size: 32px; }
-h4 { font-size: 26px; }
-h5 { font-size: 22px; }
-h6 { font-size: 20px; }
-p  { font-size: 16px; }
+h1 { font-size: 48px; margin: 0; margin-top: 2px; }
+h2 { font-size: 40px; margin: 0; margin-top: 4px; }
+h3 { font-size: 32px; margin: 0; margin-top: 12px; }
+h4 { font-size: 26px; margin: 0; margin-top: 16px; }
+h5 { font-size: 22px; margin: 0; margin-top: 16px; }
+h6 { font-size: 20px; margin: 0; margin-top: 16px; }
+p  { font-size: 16px; margin: 0; margin-top: 2px; }
 
 /* Background Colors */
 .b-black  { background-color: black;  }
@@ -124,12 +124,15 @@ p  { font-size: 16px; }
 .b-red    { background-color: red;    }
 .b-teal   { background-color: teal;   }
 
+/* Separators */
+.sep-solid { height: 100%; width: 100%; background-color: #00000000; border-bottom: solid 1px #3333337f; z-index: -10000; }
+
 /* Button Colors */
 .btn-red    { background: linear-gradient(to bottom, #c83030, #a02020); color: #ffffff; }
 .btn-yellow { background: linear-gradient(to bottom, #fac800, #c8a000); color: #000000; }
 .btn-green  { background: linear-gradient(to bottom, #00c800, #00a000); color: #ffffff; }
 .btn-blue   { background: linear-gradient(to bottom, #0000c8, #0000a0); color: #ffffff; }
-.btn-white  { background: linear-gradient(to bottom, #fafafa, #c8c8c8); color: #000000; }
+.btn-white  { background: linear-gradient(to bottom, #f3f3f3, #c8c8c8); color: #000000; }
 .btn-black  { background: linear-gradient(to bottom, #303030, #000000); color: #ffffff; }
 .btn-gray   { background: linear-gradient(to bottom, #707070, #404040); color: #ffffff; }
 
@@ -145,9 +148,9 @@ button {
   min-width: 60px;
   min-height: 60px; }
 button:hover {
-  filter: brightness(0.8); }
-button:active {
   filter: brightness(1.1); }
+button:active {
+  filter: brightness(0.8); }
 
 [type="text"] {
   border-radius: 8px;
@@ -160,4 +163,28 @@ button:active {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-/*  */
+/* Toggles */
+
+/* Checkbox */
+.checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: auto;
+  height: 90%;
+  width: 82%; }
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  background: linear-gradient(to bottom, #f3f3f3, #c8c8c8); color: #000000;
+  box-shadow: 0 1px 1px #0000007f;
+  border: solid 0 transparent;
+  border-radius: 8px; }
+.checkbox:hover input ~ .checkmark {
+  filter: brightness(1.1); }
+.checkbox input:checked ~ .checkmark {
+  background: linear-gradient(to bottom, #00c800, #00a000); color: #ffffff; }
