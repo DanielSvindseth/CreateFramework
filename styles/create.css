@@ -112,8 +112,8 @@ h1 { font-size: 48px; margin: 0; margin-top: 2px; }
 h2 { font-size: 40px; margin: 0; margin-top: 4px; }
 h3 { font-size: 32px; margin: 0; margin-top: 12px; }
 h4 { font-size: 26px; margin: 0; margin-top: 16px; }
-h5 { font-size: 22px; margin: 0; margin-top: 16px; }
-h6 { font-size: 20px; margin: 0; margin-top: 16px; }
+h5 { font-size: 22px; margin: 0; margin-top: 18px; }
+h6 { font-size: 20px; margin: 0; margin-top: 20px; }
 p  { font-size: 16px; margin: 0; margin-top: 2px; }
 
 /* Background Colors */
@@ -125,7 +125,7 @@ p  { font-size: 16px; margin: 0; margin-top: 2px; }
 .b-teal   { background-color: teal;   }
 
 /* Separators */
-.sep-solid { height: 100%; width: 100%; background-color: #00000000; border-bottom: solid 1px #3333337f; z-index: -10000; }
+.sep-solid { height: calc(100% - 8px); width: 100%; background-color: #00000000; border-bottom: solid 1px #3333337f; z-index: -10000; }
 
 /* Button Colors */
 .btn-red    { background: linear-gradient(to bottom, #c83030, #a02020); color: #ffffff; }
