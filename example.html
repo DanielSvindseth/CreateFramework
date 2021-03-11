@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Create Framework Examples</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/create.css">
+    <link rel="stylesheet" href="styles/create-4:3.css">
     <link rel="stylesheet" href="fonts/fonts.css">
   </head>
   <body class="body-light body-pad">
@@ -34,11 +34,14 @@
 
       <button class="i-hex-col-4 i-row-10 btn-blue">Svar</button>
 
-      <input class="i-quad-col-4 i-row-12 no-border-r" type="text" value="">
-      <button class="i-duo-col-8 i-row-12 btn-blue no-border-l">Svar</button>
+      <input class="i-quad-col-4 i-row-12 no-border-r" type="text" value="" id="q1" question="Kor mange bananar kjøpte per?" placeholder="Kor mange bananar kjøpte per?">
+      <button class="i-duo-col-8 i-row-12 btn-blue no-border-l" onclick="localStorage.setItem(document.getElementById('q1').placeholder, document.getElementById('q1').value)">Svar</button>
 
 
     </div>
 
   </body>
+  <script src="scripts/create.js">
+
+  </script>
 </html>
